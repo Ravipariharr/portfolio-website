@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ravi Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300&display=swap" rel="stylesheet">
+     <style>
+        {
+            margin: 0;
+            padding: 0;
+        }
+body{
+    background-color: rgb(0, 0, 0);
+    color:white;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90p;
+    background-color: rgb(14, 14, 14);
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    list-style: none;
+    margin: 0 24px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+nav ul li a:hover{
+    color: rgb(160, 159, 159);
+    
+    font-size: 1.03rem;
+}
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -2px;
+    left: 50%;
+    background-color: rgb(160, 159, 159);
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+    left: 0;
+    transition: width 0.3s ease;
+}
+.left{
+    font-size: 1.6rem;s
+}
+.firstSection{
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0;
+}
+.firstSection > div{
+    width: 30%;
+}
+.leftSection{
+    
+    font-size: 2.5rem;
+    margin:
+}
+.leftSection .btn {
+padding: 12px;
+    background:rgb(88, 86, 90);
+    color:white;
+    border:2px solid white;
+    border: radius 7px;
+    font-size: 20px;
+    cursor:pointer;
+    text-decoration: none;
+}
+.rightSection img{
+    width: 80%;
+    margin: 60px 0;
+}
+.purple{
+    color:rgb(137, 135, 139);
+}
+#element{
+    color:rgb(137, 135, 139);
+}
+.secondsection{
+    max-width: 78vw;
+    margin:auto;
+}
+   
+    </style> 
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Ravi's Portfolio</div>
+
+            <div class"right">
+                <ul>
+                     <li><a href="index.html">Home</a></li>
+                     <li><a href="about.html">About</a></li>
+                     <li><a href="cont.html">Contact</a></li>
+                     <li><a href="project.html">Project</a></li>
+
+                </ul>
+            </div>
+
+        
+        </nav>
+    </header>
+  <meta charset="UTF-8">
+  <title>Project Showcase</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      padding: 50px 0;
+    }
+    h1 {
+      text-align: center;
+    }
+    .project {
+      margin-bottom: 30px;
+      padding: 20px;
+      border: 1px solid white;
+      position: relative;
+      overflow: hidden;
+    }
+    .project h2 {
+      margin-top: 0;
+    }
+    .project p {
+      margin-bottom: 10px;
+    }
+    .project img {
+      max-width: 100%;
+      height: 200px;
+      display: block;
+      margin-bottom: 15px;
+      transition: transform 0.3s ease-in-out;
+    }
+    .project video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+      z-index: -1; /* Ensure the video stays below other elements */
+    }
+    .project .content {
+      position: relative;
+      z-index: 1; /* Ensure the content stays above the video */
+    }
+    .project:hover img {
+      transform: scale(1.1);
+    }
+    .project:hover video {
+      opacity: 1;
+    }
+    .upcoming-project {
+      text-align: center;
+      margin-top: 50px;
+    }
+    .upcoming-project h2 {
+      margin-top: 0;
+    }
+    .upcoming-project p {
+      margin-bottom: 20px;
+    }
+    .link-btn {
+      display: block;
+      width: 200px;
+      margin: 0 auto;
+      padding: 10px 20px;
+      text-align: center;
+      background-color: rgb(137, 135, 139);
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Project Showcase</h1>
+  
+  <!-- First Project -->
+  <div class="project">
+    <h2>Snake Game</h2>
+    <img src="images/snack.jpg" alt="Project 1 Image">
+    <video src="snake.webm" loop muted></video>
+    <div class="content">
+      <p>the Snake game is a classic arcade game where the player controls a snake that grows in length as it consumes food items</p>
+      <a href="snakegame.html" class="link-btn" target="_blank">View Project 1</a>
+    </div>
+  </div>
+  
+  <!-- Second Project -->
+  <div class="project">
+    <h2>Tic-tac-toe</h2>
+    <img src="images/tick.png" alt="Project 2 Image">
+    <video src="tic.webm" loop muted></video>
+    <div class="content">
+      <p>Tic-tac-toe, also known as noughts and crosses or Xs and Os, is a popular paper-and-pencil game played on a grid typically consisting of a 3x3 square. </p>
+      <a href="tic.html" class="link-btn" target="_blank">View Project 2</a>
+    </div>
+  </div>
+  
+  <!-- Upcoming Project -->
+  <div class="upcoming-project">
+    <h2>Upcoming Project</h2>
+    <p>Stay tuned for our upcoming project!</p>
+  </div>
+</div>
+
+</body>
+</html>

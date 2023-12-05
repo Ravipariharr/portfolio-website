@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ravi Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300&display=swap" rel="stylesheet">
+   <style>
+      {
+          margin: 0;
+          padding: 0;
+      }
+body{
+  background-color: rgb(0, 0, 0);
+  color:white;
+  font-family: 'Oswald', sans-serif;
+
+}
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 90p;
+  background-color: rgb(14, 14, 14);
+}
+nav ul{
+  display: flex;
+  justify-content: center;
+}
+nav ul li{
+  list-style: none;
+  margin: 0 24px;
+}
+nav ul li a{
+  text-decoration: none;
+  color: white;
+  position: relative;
+}
+nav ul li a:hover{
+  color: rgb(160, 159, 159);
+  
+  font-size: 1.03rem;
+}
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -2px;
+  left: 50%;
+  background-color: rgb(160, 159, 159);
+  transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+  left: 0;
+  transition: width 0.3s ease;
+}
+.left{
+  font-size: 1.6rem;s
+}
+.firstSection{
+  display: flex;
+  justify-content: space-around;
+  margin: 30px 0;
+}
+.firstSection > div{
+  width: 30%;
+}
+.leftSection{
+  
+  font-size: 2.5rem;
+  margin:
+}
+.leftSection .btn {
+padding: 12px;
+  background:rgb(88, 86, 90);
+  color:white;
+  border:2px solid white;
+  border: radius 7px;
+  font-size: 20px;
+  cursor:pointer;
+  text-decoration: none;
+}
+.rightSection img{
+  width: 80%;
+  margin: 60px 0;
+}
+.purple{
+  color:rgb(137, 135, 139);
+}
+#element{
+  color:rgb(137, 135, 139);
+}
+.secondsection{
+  max-width: 78vw;
+  margin:auto;
+}
+ 
+  </style> 
+</head>
+
+<body>
+  <header>
+      <nav>
+          <div class="left">Ravi's Portfolio</div>
+
+          <div class"right">
+              <ul>
+                   <li><a href="index.html">Home</a></li>
+                   <li><a href="about.html">About</a></li>
+                   <li><a href="cont.html">Contact</a></li>
+                   <li><a href="project.html">Project</a></li>
+
+              </ul>
+          </div>
+
+      
+      </nav>
+  </header>
+<head>
+    <meta charset="UTF-8">
+    <title>About Me</title>
+    <style>
+        body {
+            background-color: #000; 
+            color: #fff; /* text color */
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px; /* width of the content */
+            margin: 0 auto; /* Center the content */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="images/about.png" style="width: 220px; height: 150x;">
+       <p> My Name is Ravi Parihar.The second year of a Bachelor's in Computer Science typically delves deeper into core concepts introduced in the first year. Courses often cover more advanced programming languages, data structures, algorithms, and software engineering principles.
+        <p>My academic journey has equipped me with a solid foundation in various disciplines of engineering, including <em>mechanical</em>, <em>electrical</em>, and <em>computer science</em>. Through coursework and Assignments</p>
+
+        <p>Outside the classroom,I tried to solve code in various plateform like <em>Leetcode</em>, <em>codestdio</em> etc and also spend some time in editing photos</p>
+
+        <p>I believe in the power of engineering to shape the future and am excited to contribute my skills and knowledge to create impactful solutions that benefit society.</p>
+
+            <p>I believe in the power of engineering to shape the future and am excited to contribute my skills and knowledge to create impactful solutions that benefit society.</p>
+       
+</body>
+</html>
+<html>
+<head>
+  <title>Details</title>
+  <style>
+    .details {
+      display: none;
+    }
+
+    h3 {
+      transition: all 0.3s ease;
+    }
+
+    h3:hover {
+      cursor: pointer;
+      font-size: 1.1em;
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <h3 onclick="toggleDetails('skills')">Skills</h3>
+  <div id="skills" class="details">
+    <p style="color: rgb(107, 64, 64);">Ui</p>
+    <p>Desiging web Interfaces</p>
+    <p style="color: rgb(107, 64, 64);">Web Development </p>
+    <p>Web App Development</p>
+    <p style="color: rgb(107, 64, 64);">Dynamic programming</p>
+     <p>Regularlly solving  question in Leetcode</p>
+
+  </div>
+
+  <h3 onclick="toggleDetails('experience')">Experience</h3>
+  <div id="experience" class="details">
+    <p style="color: rgb(107, 64, 64);">2023</p>
+    <p>Ui Designing</p>
+    <p style="color: rgb(107, 64, 64);">2020-2023</p>
+    <p>C/C++,HTML,CSS,Python,SQL</p>
+  </div>
+
+  <h3 onclick="toggleDetails('education')">Education</h3>
+  <div id="education" class="details">
+    <p style="color: rgb(107, 64, 64);">2022-2026</p>
+    <p>Engineering from GEHU</p>
+    <p style="color: rgb(107, 64, 64);">2020-2022</p>
+    <p> Intermediate from St.Amtul's Public School</p>
+    <p style="color: rgb(107, 64, 64);">before 2022</p>
+    <p> high school from Longview Public School</p>
+  </div>
+
+  <script>
+    function toggleDetails(id) {
+      var details = document.getElementById(id);
+      var allDetails = document.getElementsByClassName('details');
+      
+      for (var i = 0; i < allDetails.length; i++) {
+        if (allDetails[i].id !== id) {
+          allDetails[i].style.display = "none";
+        }
+      }
+
+      if (details.style.display === "none" || details.style.display === "") {
+        details.style.display = "block";
+      } else {
+        details.style.display = "none";
+      }
+    }
+  </script>
+  <footer>
+    <p>&copy; 2023 Ravi Parihar.</p>
+</footer>
+</body>
+</html>

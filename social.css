@@ -1,0 +1,85 @@
+/* Add the .remove-background class styles */
+.remove-background {
+  background-color: transparent; /* Set background color to transparent */
+}
+
+/* Your existing styles */
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  min-height: 100vh;
+}
+
+.social-icons ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.social-icons ul li {
+  margin: 0 5px;
+}
+
+.social-icons ul li a {
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 60px;
+  font-size: 25px;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #fff;
+  z-index: 1;
+  transition: all 0.5s;
+  text-decoration: none;
+  color: #262626;
+}
+
+.social-icons ul li a .icon {
+  position: relative;
+  z-index: 3;
+  font-size: 18px; /* Decrease icon size */
+}
+
+.social-icons li a:hover .icon {
+  color: #fff;
+  transform: rotateY(360deg);
+}
+
+.social-icons li a:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f00;
+  transition: all 0.5s;
+  z-index: 2;
+}
+
+.social-icons li a:hover:before {
+  top: 0;
+}
+
+.social-icons li:nth-child(1) a:before {
+  background: #3b5999;
+}
+
+.social-icons li:nth-child(2) a:before {
+  background: #55acee;
+}
+
+.social-icons li:nth-child(3) a:before {
+  background: #0077b5;
+}
+
+.social-icons li:nth-child(4) a:before {
+  background: #dd4b39;
+}
